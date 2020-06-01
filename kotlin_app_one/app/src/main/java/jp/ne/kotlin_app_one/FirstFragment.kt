@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 
 /**
@@ -26,6 +27,15 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        view.findViewById<Button>(R.id.random_button).setOnClickListener {
+            val showCountTextView = view.findViewById<TextView>(R.id.textview_first)
+            val currentCount = showCountTextView.text.toString().toInt()
+            // val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(currentCount)
+            // -> Too many arguments ...
+            // Provisional https://developer.android.com/guide/navigation/navigation-pass-data#Safe-args
+            var bundle = bundleOf("count" to currentCount)
+            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment, bundle)
+        }
         view.findViewById<Button>(R.id.toast_button).setOnClickListener {
             val myToast = Toast.makeText(context, "Hello Toast!", Toast.LENGTH_SHORT)
             myToast.show()
