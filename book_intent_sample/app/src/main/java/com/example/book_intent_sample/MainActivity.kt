@@ -1,9 +1,13 @@
 package com.example.book_intent_sample
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
 import android.widget.ListView
 import android.widget.SimpleAdapter
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,5 +32,21 @@ class MainActivity : AppCompatActivity() {
         val to = intArrayOf(android.R.id.text1, android.R.id.text2)
         val adapter = SimpleAdapter(applicationContext, menuList, android.R.layout.simple_expandable_list_item_2, from, to)
         lvMenu.adapter = adapter
+
+        // リストタップのListenerクラス登録
+        lvMenu.onItemClickListener = ListItemClickListener()
+    }
+
+    private inner class ListItemClickListener : AdapterView.OnItemClickListener {
+        override fun onItemClick(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+            // タップされた行のデータを取得 / SimpleAdapterでは一行分のデータはMutableMap型
+            val item = parent.getItemAtPosition(position) as MutableMap<String, String>
+            // インテントオブジェクトを生成
+            val intent = Intent(applicationContext, MenuThanksActivity::class.java)
+            // 第2画面に送るデータを格納 / 定食名と金額を取得
+            intent.putExtra("menuName", item["name"])
+            intent.putExtra("menuPrice", item["price"])
+            startActivity(intent)
+        }
     }
 }
