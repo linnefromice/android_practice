@@ -1,6 +1,8 @@
 # android_practice
 
-## kotlin_app_one
+## based on web
+
+### kotlin_app_one
 
 - [Build Your First Android App in Kotlin](https://codelabs.developers.google.com/codelabs/build-your-first-android-app-kotlin)
 
@@ -10,4 +12,8 @@
 
 ### book_constraint_layout_sample
 
-Chapter6 -
+Chapter6
+
+### book_intent_sample
+
+Chapter7
