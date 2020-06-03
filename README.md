@@ -6,14 +6,18 @@
 
 - [Build Your First Android App in Kotlin](https://codelabs.developers.google.com/codelabs/build-your-first-android-app-kotlin)
 
+### android-navigation
+
+- [Google Codelabs - Jetpack Navigation](https://codelabs.developers.google.com/codelabs/android-navigation/index.html)
+
 ## based on book
 
 - [基礎＆応用力をしっかり育成！Androidアプリ開発の教科書 Kotlin対応 なんちゃって開発者にならないための実践ハンズオン](https://www.shoeisha.co.jp/book/detail/9784798160443)
 
 ### book_constraint_layout_sample
 
-Chapter6
+Chapter 6
 
 ### book_intent_sample
 
-Chapter7
+Chapter 7.1 - 7.2
