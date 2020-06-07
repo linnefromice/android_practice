@@ -14,6 +14,10 @@
 
 - [Google Codelabs - Android Room with a View - Kotlin](https://codelabs.developers.google.com/codelabs/android-room-with-a-view-kotlin/index.html)
 
+### todo_list_kotlin_one
+
+- [Medium - To-Do List Application In Kotlin Using Android Studio](https://medium.com/@tanunprabhu95/to-do-list-application-using-kotlin-using-android-studio-546e74ac75aa)
+
 ## based on book
 
 - [基礎＆応用力をしっかり育成！Androidアプリ開発の教科書 Kotlin対応 なんちゃって開発者にならないための実践ハンズオン](https://www.shoeisha.co.jp/book/detail/9784798160443)
