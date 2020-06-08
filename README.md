@@ -4,7 +4,7 @@
 
 ### kotlin_app_one
 
-- [Build Your First Android App in Kotlin](https://codelabs.developers.google.com/codelabs/build-your-first-android-app-kotlin)
+- [Google Codelabs - Build Your First Android App in Kotlin](https://codelabs.developers.google.com/codelabs/build-your-first-android-app-kotlin)
 
 ### android-navigation
 
@@ -17,6 +17,10 @@
 ### todo_list_kotlin_one
 
 - [Medium - To-Do List Application In Kotlin Using Android Studio](https://medium.com/@tanunprabhu95/to-do-list-application-using-kotlin-using-android-studio-546e74ac75aa)
+
+### todo_list_kotlin_two
+
+- [Medium - Implement Simple TodoApp Android Jetpack (LiveData, ViewModel, Room & Retrofit)](https://medium.com/@ashish.bande/not-boiling-the-ocean-livedata-viewmodel-room-retrofit-98af0b76c590)
 
 ## based on book
 
