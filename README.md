@@ -6,6 +6,10 @@
 
 - [Google Codelabs - Build Your First Android App in Kotlin](https://codelabs.developers.google.com/codelabs/build-your-first-android-app-kotlin)
 
+### kotlin_app_two
+
+- [ResoCoder - MVVM on Android Crash Course – Kotlin & Android Architecture Components](https://resocoder.com/2018/09/07/mvvm-on-android-crash-course-kotlin-android-architecture-components/)
+
 ### android-navigation
 
 - [Google Codelabs - Jetpack Navigation](https://codelabs.developers.google.com/codelabs/android-navigation/index.html)
@@ -17,6 +21,7 @@
 ### todo_list_kotlin_one
 
 - [Medium - To-Do List Application In Kotlin Using Android Studio](https://medium.com/@tanunprabhu95/to-do-list-application-using-kotlin-using-android-studio-546e74ac75aa)
+
 
 ## based on book
 
