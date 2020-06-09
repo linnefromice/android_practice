@@ -12,9 +12,9 @@ class FakeQuoteDao {
     private val quotes = MutableLiveData<List<Quote>>()
 
     init {
-        // addQuote(Quote(quoteText = "How are you?", author = "Author One"))
-        // addQuote(Quote(quoteText = "I'm sorry...", author = "Author Two"))
-        // addQuote(Quote(quoteText = "Thank you!", author = "Author Three"))
+        addQuote(Quote(quoteText = "How are you?", author = "Author One"))
+        addQuote(Quote(quoteText = "I'm sorry...", author = "Author Two"))
+        addQuote(Quote(quoteText = "Thank you!", author = "Author Three"))
 
         // Immediately connect the now empty quoteList to the MutableLiveData which can be observed
         quotes.value = quoteList
