@@ -15,10 +15,6 @@ class QuotesViewModel : ViewModel() {
     private val quotes: LiveData<List<Quote>>
 
     init {
-        // TEST DATA
-        addQuote(Quote(quoteText = "How are you?", author = "Author One"))
-        addQuote(Quote(quoteText = "I'm sorry...", author = "Author Two"))
-        addQuote(Quote(quoteText = "Thank you!", author = "Author Three"))
         quotes = quoteRepository.getQuotes()
     }
 

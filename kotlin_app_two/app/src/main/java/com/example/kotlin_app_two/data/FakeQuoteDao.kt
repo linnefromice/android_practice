@@ -12,6 +12,10 @@ class FakeQuoteDao {
     private val quotes = MutableLiveData<List<Quote>>()
 
     init {
+        // addQuote(Quote(quoteText = "How are you?", author = "Author One"))
+        // addQuote(Quote(quoteText = "I'm sorry...", author = "Author Two"))
+        // addQuote(Quote(quoteText = "Thank you!", author = "Author Three"))
+
         // Immediately connect the now empty quoteList to the MutableLiveData which can be observed
         quotes.value = quoteList
     }
@@ -20,7 +24,7 @@ class FakeQuoteDao {
         quoteList.add(quote)
         // After adding a quote to the "database"
         // update the value of MutableLiveData which will notify its active observers
-        quotes.value = quoteList
+        quotes.postValue(quoteList)
     }
 
     // Casting MutableLiveData to LiveData because its value shouldn't be changed from other classes
