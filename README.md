@@ -10,6 +10,10 @@
 
 - [ResoCoder - MVVM on Android Crash Course – Kotlin & Android Architecture Components](https://resocoder.com/2018/09/07/mvvm-on-android-crash-course-kotlin-android-architecture-components/)
 
+### kotlin_app_three
+
+- [Make Your First Android App with Kotlin (Android Kotlin Tutorial for Beginners) (Code)](https://resocoder.com/2017/11/17/make-your-first-android-app-with-kotlin-android-developer-tutorial-for-beginners-code/)
+
 ### android-navigation
 
 - [Google Codelabs - Jetpack Navigation](https://codelabs.developers.google.com/codelabs/android-navigation/index.html)
