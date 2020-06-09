@@ -12,7 +12,11 @@
 
 ### kotlin_app_three
 
-- [Make Your First Android App with Kotlin (Android Kotlin Tutorial for Beginners) (Code)](https://resocoder.com/2017/11/17/make-your-first-android-app-with-kotlin-android-developer-tutorial-for-beginners-code/)
+- [ResoCoder - Make Your First Android App with Kotlin (Android Kotlin Tutorial for Beginners) (Code)](https://resocoder.com/2017/11/17/make-your-first-android-app-with-kotlin-android-developer-tutorial-for-beginners-code/)
+
+### kotlin_data-binding_one
+
+- [ResoCoder - Data Binding with LiveData (Two-way & One-way) – Android Kotlin Tutorial](https://resocoder.com/2018/09/21/data-binding-with-livedata-two-way-one-way-android-kotlin-tutorial/)
 
 ### android-navigation
 
