@@ -17,6 +17,7 @@
 ### kotlin_app_four
 
 - [Qiita - とにかく簡単にViewModelまとめ](https://qiita.com/KIRIN3qiita/items/7d833e2c010c0b2c02d9)
+- [Qiita - とにかく簡単にLiveDataまとめ](https://qiita.com/KIRIN3qiita/items/6f5c467a8abc7b89cbe7)
 
 ### kotlin_data-binding_one
 

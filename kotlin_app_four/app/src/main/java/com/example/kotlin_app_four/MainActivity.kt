@@ -2,6 +2,7 @@ package com.example.kotlin_app_four
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -17,10 +18,13 @@ class MainActivity : AppCompatActivity() {
 
         countButton.setOnClickListener {
             counterA++
-            viewModel.counterB++
-
             textOne.setText(counterA.toString())
-            textTwo.setText(viewModel.counterB.toString())
+            viewModel.counterB.value = viewModel.counterB.value!! + 1
         }
+
+        val countObserver = Observer<Int> { counter ->
+            textTwo.text = counter.toString()
+        }
+        viewModel.counterB.observe(this, countObserver)
     }
 }
