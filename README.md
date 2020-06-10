@@ -14,6 +14,10 @@
 
 - [ResoCoder - Make Your First Android App with Kotlin (Android Kotlin Tutorial for Beginners) (Code)](https://resocoder.com/2017/11/17/make-your-first-android-app-with-kotlin-android-developer-tutorial-for-beginners-code/)
 
+### kotlin_app_four
+
+- [Qiita - とにかく簡単にViewModelまとめ](https://qiita.com/KIRIN3qiita/items/7d833e2c010c0b2c02d9)
+
 ### kotlin_data-binding_one
 
 - [ResoCoder - Data Binding with LiveData (Two-way & One-way) – Android Kotlin Tutorial](https://resocoder.com/2018/09/21/data-binding-with-livedata-two-way-one-way-android-kotlin-tutorial/)
