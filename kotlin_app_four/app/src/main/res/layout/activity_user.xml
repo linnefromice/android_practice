@@ -40,7 +40,7 @@
                 android:textSize="20sp"
                 android:text="@{String.valueOf(userViewModel.user.age)}" />
         </LinearLayout>
-<!--
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="60dp"
@@ -50,7 +50,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:logoIcon="@{userViewModel.logo}" />
--->
+
         <Button
             android:id="@+id/changeButton"
             android:layout_width="wrap_content"
