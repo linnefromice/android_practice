@@ -36,6 +36,9 @@
 
 - [Medium - To-Do List Application In Kotlin Using Android Studio](https://medium.com/@tanunprabhu95/to-do-list-application-using-kotlin-using-android-studio-546e74ac75aa)
 
+### udacity_dice_roller
+
+- [Udacity - Developing Android Apps with Kotlin](https://classroom.udacity.com/courses/ud9012)
 
 ## based on book
 
