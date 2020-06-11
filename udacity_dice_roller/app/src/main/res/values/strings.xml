@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">udacity_dice_roller</string>
+    <string name="roll">Roll</string>
 </resources>
