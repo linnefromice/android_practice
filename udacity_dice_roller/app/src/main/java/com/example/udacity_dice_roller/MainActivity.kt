@@ -12,14 +12,21 @@ class MainActivity : AppCompatActivity() {
 
         roll_button.text = "Let's Roll"
         roll_button.setOnClickListener {
-            // 1-17
-            // Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
             rolLDice()
         }
     }
 
     private fun rolLDice() {
         val randomInt: Int = Random().nextInt(6) + 1
-        result_text.text = randomInt.toString()
+        val drawableResource: Int = when (randomInt) {
+            1 -> R.drawable.dice_1
+            2 -> R.drawable.dice_2
+            3 -> R.drawable.dice_3
+            4 -> R.drawable.dice_4
+            5 -> R.drawable.dice_5
+            6 -> R.drawable.dice_6
+            else -> R.drawable.empty_dice
+        }
+        dice_image.setImageResource(drawableResource)
     }
 }
