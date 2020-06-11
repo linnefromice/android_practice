@@ -1,5 +1,6 @@
 package com.example.kotlin_app_four
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
@@ -26,5 +27,10 @@ class MainActivity : AppCompatActivity() {
             textTwo.text = counter.toString()
         }
         viewModel.counterB.observe(this, countObserver)
+
+        navigationButton.setOnClickListener {
+            val intent = Intent(this, UserActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
