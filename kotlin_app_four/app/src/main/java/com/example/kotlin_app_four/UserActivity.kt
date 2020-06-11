@@ -16,7 +16,7 @@ class UserActivity : AppCompatActivity() {
         // DataBindingのインスタンスを作成(onCreateの外でも良い)
         val binding: ActivityUserBinding = DataBindingUtil.setContentView(this, R.layout.activity_user)
         // ViewModelのインスタンスを設定
-        binding.user = viewModel
+        binding.userViewModel = viewModel
         // ライフサイクル所有者を設定
         binding.lifecycleOwner = this
     }
