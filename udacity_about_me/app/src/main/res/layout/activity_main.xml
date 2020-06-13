@@ -12,12 +12,9 @@
         android:id="@+id/name_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:paddingTop="8dp"
         android:text="@string/name_text"
-        android:textSize="20sp"
-        android:textColor="@android:color/black"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        style="@style/NameStyle" />
 
     <ImageView
         android:id="@+id/image_view"
@@ -25,5 +22,19 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/image_view_description"
         app:srcCompat="@android:drawable/btn_star_big_on" />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/bio_text"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/bio" />
+
+    </ScrollView>
 
 </LinearLayout>
