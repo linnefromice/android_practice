@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">udacity_about_me</string>
+    <string name="name_text">Linnefromice</string>
+    <string name="image_view_description">Star</string>
 </resources>
