@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+<data>
+    <variable
+        name="myName"
+        type="com.example.udacity_about_me.MyName" />
+</data>
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -12,7 +19,7 @@
         android:id="@+id/name_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/name_text"
+        android:text="@={myName.name}"
         android:textAlignment="center"
         style="@style/NameStyle" />
 
@@ -21,7 +28,7 @@
         style="@style/NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/name_text"
+        android:text="@={myName.nickname}"
         android:textAlignment="center"
         android:hint="Please input nickname."
         android:inputType="textPersonName" />
@@ -31,6 +38,7 @@
         style="@style/NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@={myName.nickname}"
         android:textAlignment="center"
         android:visibility="gone" />
 
@@ -75,3 +83,4 @@
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
+</layout>
