@@ -16,6 +16,33 @@
         android:textAlignment="center"
         style="@style/NameStyle" />
 
+    <EditText
+        android:id="@+id/nickname_edit"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_text"
+        android:textAlignment="center"
+        android:hint="Please input nickname."
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/nickname_text"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:text="@string/done"
+        android:textAlignment="center"/>
+
     <ImageView
         android:id="@+id/image_view"
         android:layout_width="match_parent"
