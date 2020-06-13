@@ -56,6 +56,13 @@ Chapter 6
 
 Chapter 7.1 - 7.2
 
+## original
+
+### kotlin_app_original_one
+
+- Simple four choice quiz
+  - use DataBinding
+
 ## Candidates
 
 - [Medium - Implement Simple TodoApp Android Jetpack (LiveData, ViewModel, Room & Retrofit)](https://medium.com/@ashish.bande/not-boiling-the-ocean-livedata-viewmodel-room-retrofit-98af0b76c590)
