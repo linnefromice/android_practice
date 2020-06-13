@@ -38,7 +38,11 @@
 
 ### udacity_dice_roller
 
-- [Udacity - Developing Android Apps with Kotlin](https://classroom.udacity.com/courses/ud9012)
+- [Udacity - Developing Android Apps with Kotlin](https://classroom.udacity.com/courses/ud9012) - Lesson1
+
+### udacity_about_me
+
+- [Udacity - Developing Android Apps with Kotlin](https://classroom.udacity.com/courses/ud9012)  - Lesson2
 
 ## based on book
 
