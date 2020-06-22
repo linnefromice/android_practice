@@ -54,4 +54,5 @@ class SleepTrackerFragment : Fragment() {
         binding.setLifecycleOwner(this)
         return binding.root
     }
+
 }
