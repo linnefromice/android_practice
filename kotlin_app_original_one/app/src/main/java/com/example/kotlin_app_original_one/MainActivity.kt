@@ -8,10 +8,12 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.example.kotlin_app_original_one.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    private var EXTRA_KEY = "correct_count_key"
     private var quizList: MutableList<Quiz> = mutableListOf<Quiz>(
         Quiz(
             id = 1,
@@ -56,24 +58,29 @@ class MainActivity : AppCompatActivity() {
         val randomInt = Random.nextInt(quizList.size)
         val quiz: Quiz = quizList[randomInt]
         binding.quiz = quiz
-        addActionToButtons(quiz)
+
+        val correctNumber = intent.extras?.getInt(EXTRA_KEY) ?: 0
+        addActionToButtons(quiz, correctNumber)
+        correct_count_number.text = correctNumber.toString()
     }
 
-    private fun addActionToButtons(quiz: Quiz) {
+    private fun addActionToButtons(quiz: Quiz, correctNumber: Int) {
         val correctAnswer: String = quiz.proposedAnswerList[quiz.answerIndex]
-        binding.buttonOne.setOnClickListener { createResultToast(quiz.proposedAnswerList[0], correctAnswer)}
-        binding.buttonTwo.setOnClickListener { createResultToast(quiz.proposedAnswerList[1], correctAnswer)}
-        binding.buttonThree.setOnClickListener { createResultToast(quiz.proposedAnswerList[2], correctAnswer)}
-        binding.buttonFour.setOnClickListener { createResultToast(quiz.proposedAnswerList[3], correctAnswer)}
+        binding.buttonOne.setOnClickListener { createResultToast(quiz.proposedAnswerList[0], correctAnswer, correctNumber)}
+        binding.buttonTwo.setOnClickListener { createResultToast(quiz.proposedAnswerList[1], correctAnswer, correctNumber)}
+        binding.buttonThree.setOnClickListener { createResultToast(quiz.proposedAnswerList[2], correctAnswer, correctNumber)}
+        binding.buttonFour.setOnClickListener { createResultToast(quiz.proposedAnswerList[3], correctAnswer, correctNumber)}
     }
 
-    private fun createResultToast(answer: String, correctAnswer: String) {
+    private fun createResultToast(answer: String, correctAnswer: String, correctNumber: Int) {
+        val intent = Intent(this@MainActivity, MainActivity::class.java)
         if (answer == correctAnswer) {
             Toast.makeText(applicationContext, "Correct!", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this@MainActivity, MainActivity::class.java)
-            startActivity(intent)
+            intent.putExtra(EXTRA_KEY, correctNumber + 1)
         } else {
             Toast.makeText(applicationContext, "Incorrect...", Toast.LENGTH_SHORT).show()
+            intent.putExtra(EXTRA_KEY, 0)
         }
+        startActivity(intent)
     }
 }
