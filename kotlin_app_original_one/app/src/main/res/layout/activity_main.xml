@@ -19,24 +19,28 @@
             android:layout_width="360dp"
             android:layout_height="200dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <TextView
                     android:id="@+id/question_title"
                     android:text="@{quiz.title}"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp" />
             </TableRow>
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <TextView
                     android:id="@+id/question_description"
                     android:text="@{quiz.description}"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
             </TableRow>
         </TableLayout>
 
@@ -87,6 +91,28 @@
             android:text="@{quiz.proposedAnswerList[3]}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button_two" />
+
+        <TextView
+            android:id="@+id/correct_count_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Correct Number"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_three" />
+
+        <TextView
+            android:id="@+id/correct_count_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="0"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/correct_count_label" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
